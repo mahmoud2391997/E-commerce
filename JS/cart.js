@@ -4,7 +4,6 @@ const cart = JSON.parse(localStorage.getItem("cart"));
 
 let total = document.getElementById(`total`);
 
-
 let carts  = document.getElementById("cart-items");
 let checkout  = document.getElementById("checkout");
 const quantity = [];
@@ -35,9 +34,9 @@ for (let i = 0; i < cart.length; i++) {
     carts.appendChild(item);
     document.getElementById(`item-${i}-btn`).addEventListener("click",()=> {
         let price = document.getElementById(`item-${i}-price`);
-
+        
         removeItem(price.innerHTML)
-
+        
         localStorage.setItem('cart',JSON.stringify(cart))
         document.getElementById(`item-${i}`).remove();
         console.log(carts.innerHTML)
@@ -47,24 +46,24 @@ for (let i = 0; i < cart.length; i++) {
             checkout.style.display = "none";
             
         }
-
+        
     })
     let num  = document.getElementById(`num-item-${i}`);
     let price = document.getElementById(`item-${i}-price`);
     document.getElementById(`plus-item-${i}`).addEventListener("click",()=>{
-    
+        
         num.innerHTML = ++quantity[i] ;
         
         price.innerHTML = +(num.innerHTML) * +(cart[i].price);
-       printSum();
+        printSum();
     })
     document.getElementById(`minus-item-${i}`).addEventListener("click",()=>{
         if(+num.innerHTML > 1){
-           
+            
             num.innerHTML = --quantity[i];
             price.innerHTML = +(num.innerHTML) * +(cart[i].price);
             printSum();
-
+            
         } else{
             
         }
@@ -85,10 +84,10 @@ function printSum() {
         if (price == null) {
             continue
         }
-         sum += +price.innerHTML 
+        sum += +price.innerHTML 
         total.innerHTML = `Your Total is:${sum}L.E`
-     
-        }
+        
+    }
 }
 printSum()
 function removeItem(value) {
@@ -96,6 +95,7 @@ function removeItem(value) {
     sum -= +value;
     console.log(sum);
     total.innerHTML = `Your Total is:${sum}L.E`
-
+    
 }
+
 

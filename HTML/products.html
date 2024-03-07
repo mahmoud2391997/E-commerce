@@ -34,23 +34,45 @@
             </div>
           </div>
           
-        <div class="nav">
-            <ul>
-                <li><a href="main.html"><button type="button" class="button home">Home</button></a></li>
-                <li><a href="products.html"><button type="button" class="button prod">Products</button></a></li>
+          <div class="nav">
+              <ul>
+                  <li><a href="main.html"><button type="button" class="button home">Home</button></a></li>
+                  <li><a href="products.html"><button type="button" class="button prod">Products</button></a></li>
+                  
+                  <li><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #5B9BF3;"> Cart</i></a></li>
+                  <li id="dm"><button  id="dark"><i class="fa fa-moon-o" aria-hidden="true" > Dark</i></button></li>
+                  <li id = "lm">
+                      <button  id="light" ><i class="fas fa-sun" style="color: #5B9BF3;"> Light</i></button></li>
+                    </ul>
+                </div>
+            </header>
+            <section class="filter">
+            <div class="categories">
+            <div class="dropdown cat">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
 
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #5B9BF3;"> Cart</i></a></li>
-                <li id="dm"><button  id="dark"><i class="fa fa-moon-o" aria-hidden="true" > Dark</i></button></li>
-                <li id = "lm">
-                    <button  id="light" ><i class="fas fa-sun" style="color: #5B9BF3;"> Light</i></button></li>
-            </ul>
-        </div>
-    </header>
-    <div class="search">
+              <p>categories</p>  
+                <div class="dropdown-content" id="drop-cat">
+                   <a><button class="button" id="all" style="margin-left: 30px;">all</button></a>
+               
+                    
+                </div>
+              </div></div>
+            </div>
+            <div class="search">
         <i class="fas fa-search" style="color: #5B9BF3; position: absolute; left: 4%; "></i>
         <input type="text" id="search-text" placeholder="search">
 
     </div>
+<div class="sort">
+  <div>  <input  id="asc" type="radio" name="sorting">
+    <label for="asc">ascending</label></div>
+  <div> <input id="des"  type="radio" name="sorting">
+    <label for="des">descending</label></div> 
+</div>
+
+
+</section>
     <section class="items" id="container">
     </section>
     <script src="../JS/main.js"></script>

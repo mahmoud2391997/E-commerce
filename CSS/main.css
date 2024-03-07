@@ -1,0 +1,426 @@
+
+body{
+    background-color: #f7fafd;
+}
+.icon{
+    margin-left: 6%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ height: 40px;
+    
+    width: 200px;
+ }
+ header{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     height: 115px;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .logo{
+     /* T */
+ 
+ width: 41px;
+ height: 41px;
+ 
+ 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+ border-radius: 50%;
+ background-color: #5B9BF3;
+ text-align: center;
+ }
+ .T{
+     width: 17px;
+ height: 32px;
+ color: white;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 26px;
+ font-weight: 700;
+ line-height: 33px;
+ letter-spacing: 0em;
+ text-align: left;
+ 
+ }
+ .brand{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;  display: block;
+    color:#183153;
+ }
+ .nav{
+ width:30%; 
+ height: 23px;
+ margin-right: 2%;
+  display: block;
+ }
+ ul{
+ list-style: none;
+     display: flex;
+      flex-direction:row;
+       justify-content: space-between;
+       align-items: center;
+ margin: 0;
+ padding-left: 0;
+ width: 100%;
+ }
+ ul li{
+   font-family: font-sans;
+ text-align: center;
+ }
+ .button{
+    color: #183153;
+
+    border: none;
+    background-color:transparent;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+h1{
+    margin: 0;
+
+color: #183153;
+font-family: sans-serif;
+font-size: 44px;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0px;
+text-align: left;
+flex-shrink: 6;
+display: flex;
+height: auto;
+top: 148px;
+
+left: 7%;
+
+position: absolute;
+}
+.home{
+    font-weight: bold;
+    }
+    .products{
+        display: flex;
+        position: absolute;
+        top: 283px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 1600px;
+        left: 0;
+    }
+    .sec-1{
+        width: 80%;
+        height: 477px;
+        position: relative;
+    
+        background-image: linear-gradient(to left,#67C3F3,#5A98F2);
+        border-radius: 24px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        /* static lg:absolute top-4 w-[80%] lg:h-[425px] h-[635px] bg-gradient-to-l from-[#67C3F3] to-[#5A98F2] rounded-3xl flex justify-evenly items-center flex-col
+        w-[78%] lg:h-[477px] top-[2591px] absolute lg:left-[12%] flex lg:flex-row lg:top-[2150px] md:top-[2370px] sm:top-[2580px] max-[639px]:top-[3260px] flex-col h-[907px] max-[639px]:w-full */
+    }
+    img{
+        width: 41%;
+        height: 80%;
+        border-radius: 24px;
+        position: absolute;
+        right: 5%;
+    }
+    
+    .container{
+        width: 50%;
+        position: absolute;
+        left: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 90%;
+        /* lg:absolute left-[56%] static flex flex-col items-center justify-between h-[390px] max-[639px]:h-[477px] */
+    }
+   
+    .Text{
+        color: #183153;
+
+        width: 100%;
+        height: 150px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        text-align: left;
+        /* Text lg:w-[433px] h-28 font-sans font-bold text-5xl text-black w-full max-[639px]:text-center text-center lg:text-left */
+    }
+    .describe{
+        color: #183153;
+margin: 0;
+        width: 100%;
+        height: 150px;
+        
+        font-family: sans-serif;
+        font-size: x-large;
+        /* describe lg:w-[445px] h-[96px] lg:absolute top-[137px] font-sans font-light text-[#7D7987] text-xl static max-[639px]:h-[206px] max-[639px]:w-[207px] max-[639px]:text-center text-center lg:text-left w-full */
+    }
+    .price{
+        color: #183153;
+margin: 0;
+        width: 100%;
+        height: 150px;
+        
+        font-family: sans-serif;
+        font-size: x-large;
+        /* describe lg:w-[445px] h-[96px] lg:absolute top-[137px] font-sans font-light text-[#7D7987] text-xl static max-[639px]:h-[206px] max-[639px]:w-[207px] max-[639px]:text-center text-center lg:text-left w-full */
+    }
+    .button-1{
+        color: #183153;
+
+        width: 200px;
+        height: 60px;
+       
+        border-radius: 55px;
+        font-family: sans-serif;
+        font-size: large;
+        cursor: pointer;
+        font-weight: bold;
+        border: transparent;
+        /* w-[200px] h-[60px] lg:absolute left-0 top-[283px] static */
+    }
+    .price{
+        height: 40px;
+    }
+    
+    footer{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        top: 2000px;
+        background-image: linear-gradient(to left,#67C3F3,#5A98F2);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        left: 0;
+        /* w-full h-[432px] absolute lg:top-[4715px] md:top-[5820px] bg-gradient-to-b from-[#67C3F3] to-[#5A98F2] sm:top-[7295px] max-[639px]:top-[8156px] flex flex-col items-center justify-between max-[639px]:h-[855px] */
+    }
+    .T2{
+        width: 17px;
+height: 32px;
+color: #5B9BF3;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 26px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+
+    }
+    .logo2{
+
+width: 41px;
+height: 41px;
+
+
+display: flex;
+    justify-content: center;
+    align-items: center;
+
+border-radius: 50%;
+background-color: white;
+text-align: center;
+    }
+    .logo-brand{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;    
+width: 200px;
+
+}
+.content{
+    width:30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    left: 3.6%;
+    height: 70px;
+}
+.region{
+    position: absolute;
+    left: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 58%;
+}
+.regions,.copy,span{
+font-family: sans-serif;
+font-size: large;
+}
+.countries{
+width: 80%;
+display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bar{
+    border: 1.6px solid #5B9BF3;
+
+position: absolute;
+width: 30px;
+height: 0px;
+}
+.st{
+top: 0;
+}
+.nd{
+top: 9px;
+}
+.rd{
+top: 18px;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 18px;
+}
+ @media (max-width: 891px) {
+    h1{
+width: 100%;
+text-align: center;
+position: static;
+display: block;
+    }
+    .nav{
+        display: none;
+
+    }
+    .menu{
+        display: block;
+    }
+
+    .sec-1{
+        flex-direction: column;
+        height: 920px;
+    }
+    img{
+        margin-top: 20px;
+    position: static;
+    width: 90%;
+    height: 47%;
+    }
+    .products{
+        height: 3000px;;
+    }
+    .container{
+        position: static;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        height: 41%;
+    }
+    .Text{
+        height: 100px;
+    }
+    .describe{
+        height: 155px;
+    }
+   
+    .Text,.price,.describe,.button-1{
+        text-align: center;
+    }
+    footer{
+        top: 3350px;
+    }
+} @media (max-width:550px) {
+    img{
+height: 26%;
+    }
+    .container{
+      
+        height: 79%;
+    }
+    .describe{
+        height: 254px;
+    }
+}
+@media (max-width:584px) {
+   footer{
+    height: 223px;
+   }
+   .region{
+    flex-direction: column;
+    position: static;
+    width: 30%;
+    margin-top: 49px;
+   }
+   .countries{
+    flex-direction: column;
+   }
+} @media (max-width:342px){
+footer{
+    height: 200px;
+    flex-direction: column;
+}
+.content{
+    align-items: center;
+width: 100%;
+}
+.stat{
+position: static;
+}
+.copy{
+    text-align: center;
+}
+   .region{
+   margin: 0;}
+}
+.dropdown {
+position: relative;
+display: inline-block;
+margin-right: 6%;
+
+}
+
+.dropdown-content {
+right: -2px;
+top: 20px;
+display: none;
+position: absolute;
+background-image: linear-gradient(to left,#67C3F3,#5A98F2);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#lm button,#dm button,#dark_mode button,#light_mode button{
+    background-color: transparent;
+    border-color: transparent;
+}
+#lm,#light_mode{
+    display: none;
+}

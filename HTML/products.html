@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/products.css">
+    <script src="https://kit.fontawesome.com/bf0f47b06f.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="icon">
+            <div class="logo">
+            <div class="T">E</div>    
+            </div>
+            <div class="brand">E-Commerce</div>
+        </div>
+        
+        <div class="dropdown">
+            <div class="menu">
+                <div class="bar st "></div>
+                <div class="bar nd "></div>
+                <div class="bar rd "></div>
+            </div>
+            <div class="dropdown-content">
+                <a href="main.html"><button type="button" class="button home">Home</button></a>
+                <a href="products.html"><button type="button" class="button prod">Products</button></a>
+                <a href="cart.html"><button type="button" class="button">Cart</button></a>
+                <a  id="dark_mode"><button  id="dark-drop"><i class="fa fa-moon-o" aria-hidden="true"> Dark</i></button></a>   
+                <a id="light_mode"><button  id="light-drop"><i class="fas fa-sun " > Light</i></button></a> 
+           
+                
+            </div>
+          </div>
+          
+        <div class="nav">
+            <ul>
+                <li><a href="main.html"><button type="button" class="button home">Home</button></a></li>
+                <li><a href="products.html"><button type="button" class="button prod">Products</button></a></li>
+
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #5B9BF3;"> Cart</i></a></li>
+                <li id="dm"><button  id="dark"><i class="fa fa-moon-o" aria-hidden="true" > Dark</i></button></li>
+                <li id = "lm">
+                    <button  id="light" ><i class="fas fa-sun" style="color: #5B9BF3;"> Light</i></button></li>
+            </ul>
+        </div>
+    </header>
+    <div class="search">
+        <i class="fas fa-search" style="color: #5B9BF3; position: absolute; left: 4%; "></i>
+        <input type="text" id="search-text" placeholder="search">
+
+    </div>
+    <section class="items" id="container">
+    </section>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/dark_mode.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+body{
+    background-color: #f7fafd;
+}
+#lm button,#dm button,#dark_mode button,#light_mode button{
+    background-color: transparent;
+    border-color: transparent;
+}
+#lm,#light_mode{
+    display: none;
+}
+.dark-mode{
+    background-color: #000d1a;
+
+}

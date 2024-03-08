@@ -1,7 +1,6 @@
 
-body{
-    background-color: #f7fafd;
-}
+
+
 .icon{
     margin-left: 6%;
  display: flex;
@@ -417,10 +416,4 @@ display: block;
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-#lm button,#dm button,#dark_mode button,#light_mode button{
-    background-color: transparent;
-    border-color: transparent;
-}
-#lm,#light_mode{
-    display: none;
-}
+

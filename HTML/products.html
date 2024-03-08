@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/products.css">
     <script src="https://kit.fontawesome.com/bf0f47b06f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/products.css">
     <link rel="stylesheet" href="../CSS/general.css">
-
+    
     <title>Document</title>
 </head>
-<body>
+<body  class="light">
     <header>
         <div class="icon">
             <div class="logo">
             <div class="T">E</div>    
             </div>
-            <div class="brand">E-Commerce</div>
+            <div class="brand" id="brand">E-Commerce</div>
         </div>
         
         <div class="dropdown">
@@ -37,8 +37,8 @@
           
           <div class="nav">
               <ul>
-                  <li><a href="main.html"><button type="button" class="button home">Home</button></a></li>
-                  <li><a href="products.html"><button type="button" class="button prod">Products</button></a></li>
+                  <li><a href="main.html"><button type="button" class="button home" id="home">Home</button></a></li>
+                  <li><a href="products.html"><button type="button" class="button prod" id="products">Products</button></a></li>
                   
                   <li><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #5B9BF3;"> Cart</i></a></li>
                   <li id="dm"><button  id="dark"><i class="fa fa-moon-o" aria-hidden="true" > Dark</i></button></li>
@@ -50,9 +50,8 @@
             <section class="filter">
             <div class="categories">
             <div class="dropdown cat">
-                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                <i class="fa fa-caret-down" aria-hidden="true" id="category" style="font-size: 20px;">categories</i>
 
-              <p>categories</p>  
                 <div class="dropdown-content" id="drop-cat">
                    <a><button class="button" id="all" style="margin-left: 30px;">all</button></a>
                
@@ -67,9 +66,9 @@
     </div>
 <div class="sort">
   <div>  <input  id="asc" type="radio" name="sorting">
-    <label for="asc">ascending</label></div>
+    <label for="asc" class="ascending" id="ascending">ascending</label></div>
   <div> <input id="des"  type="radio" name="sorting">
-    <label for="des">descending</label></div> 
+    <label for="des" class="descending" id="descending">descending</label></div> 
 </div>
 
 

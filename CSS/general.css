@@ -1,5 +1,5 @@
 
-body{
+.light{
     background-color: #f7fafd;
 }
 #lm button,#dm button,#dark_mode button,#light_mode button{
@@ -11,5 +11,9 @@ body{
 }
 .dark-mode{
     background-color: #000d1a;
+
+}
+.dark-mode-text{
+    color: #f7fafd;
 
 }

@@ -275,7 +275,7 @@ top: 164px;
     justify-content: space-between;
     align-items: center;
 }
-.sort label{
+.ascending,.descending{
     color: #183153;
     border: none;
     background-color: transparent;

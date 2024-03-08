@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/cart.css">
     <script src="https://kit.fontawesome.com/bf0f47b06f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../CSS/general.css">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/general.css">
 </head>
-<body>
+<body  class="light">
     <header>
         <div class="icon">
             <div class="logo">
             <div class="T">E</div>    
             </div>
-            <div class="brand">E-Commerce</div>
+            <div class="brand" id="brand">E-Commerce</div>
         </div>
         
         <div class="dropdown">
@@ -36,8 +36,8 @@
           
         <div class="nav">
             <ul>
-                <li><a href="main.html"><button type="button" class="button home">Home</button></a></li>
-              <li><a href="products.html"><button type="button" class="button prod">Products</button></a></li>  
+                <li><a href="main.html"><button type="button" class="button home" id="home">Home</button></a></li>
+              <li><a href="products.html"><button type="button" class="button prod" id="products">Products</button></a></li>  
 
                 <li><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #5B9BF3;"> Cart</i></a></li>
                 <li id="dm"><button  id="dark"><i class="fa fa-moon-o" aria-hidden="true" > Dark</i></button></li>
@@ -49,7 +49,7 @@
     <div class="empty-cart" id="empty">Your Cart Is Empty</div>
     <section id="cart-items"></section>
     <div class="checkout" id="checkout">
-        <p id="total"></p>
+        <p id="total" class="total"></p>
         <button class="button-1 check">Checkout</button>
 
     </div>

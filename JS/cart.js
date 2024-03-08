@@ -1,14 +1,24 @@
 
 const cart = JSON.parse(localStorage.getItem("cart"));
 
+const quantities = JSON.parse(localStorage.getItem("quantity"));
 
 let total = document.getElementById(`total`);
 
 let carts  = document.getElementById("cart-items");
 let checkout  = document.getElementById("checkout");
-const quantity = [];
+if (cart){
 for (let i = 0; i < cart.length; i++) {
-    quantity[i]= 1;
+    // const quantity = localStorage.getItem("quantity")
+    // if(quantity){
+    //     const itemQuantity = JSON.parse(quantity);
+    //     itemQuantity.push(1);
+    // localStorage.setItem('quantity',JSON.stringify(itemQuantity))
+    // } else {
+    // localStorage.setItem('quantity',JSON.stringify([1]))
+    
+    // }
+    console.log(quantities);
     let item = document.createElement("div");
     item.className = "cart-item";
     item.id = `item-${i}`;
@@ -21,11 +31,11 @@ for (let i = 0; i < cart.length; i++) {
     </div>
     <div class="quantity">
     <button class="minus" id="minus-item-${i}">-</button>
-    <div id = "num-item-${i}">${quantity[i]}</div>
+    <div id = "num-item-${i}">${quantities[i]}</div>
     <button class="plus" id="plus-item-${i}">+</button>
     </div>
     <div class = "item-price"  id="item-${i}-price">
-    ${cart[i].price}                  </div>
+    ${cart[i].price * quantities[i]}                  </div>
     <button class="trash button-1" id="item-${i}-btn">
     remove           </button>
     
@@ -42,6 +52,7 @@ for (let i = 0; i < cart.length; i++) {
         console.log(carts.innerHTML)
         if (carts.innerHTML === "") {
             localStorage.removeItem('cart')
+            localStorage.removeItem('quantity')
             empty.style.display = "block";
             checkout.style.display = "none";
             
@@ -52,17 +63,21 @@ for (let i = 0; i < cart.length; i++) {
     let price = document.getElementById(`item-${i}-price`);
     document.getElementById(`plus-item-${i}`).addEventListener("click",()=>{
         
-        num.innerHTML = ++quantity[i] ;
+        num.innerHTML = ++quantities[i] ;
         
         price.innerHTML = +(num.innerHTML) * +(cart[i].price);
         printSum();
+        ;
+        localStorage.setItem('quantity',JSON.stringify(quantities))
+        
     })
     document.getElementById(`minus-item-${i}`).addEventListener("click",()=>{
         if(+num.innerHTML > 1){
             
-            num.innerHTML = --quantity[i];
+            num.innerHTML = --quantities[i];
             price.innerHTML = +(num.innerHTML) * +(cart[i].price);
             printSum();
+            localStorage.setItem('quantity',JSON.stringify(quantities))
             
         } else{
             
@@ -74,12 +89,12 @@ if (cart) {
     empty.style.display = "none";
     checkout.style.display = "flex";
     
-}
+}}
 let sum;
 function printSum() {
+    if (cart) {
     sum = 0
     for (let j = 0; j < cart.length; j++) { 
-        console.log(cart);
         let price = document.getElementById(`item-${j}-price`);
         if (price == null) {
             continue
@@ -87,7 +102,7 @@ function printSum() {
         sum += +price.innerHTML 
         total.innerHTML = `Your Total is:${sum}L.E`
         
-    }
+    }}
 }
 printSum()
 function removeItem(value) {
